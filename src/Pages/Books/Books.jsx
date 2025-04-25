@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Book from '../../Components/Book/Book';
 import { BookOpen, LibraryBig } from 'lucide-react';
@@ -30,16 +30,33 @@ const Books = () => {
         { "id": 20, "name": "Motivation" }
     ]
 
+    const [displayBooks, setDisplayBooks] = useState([]);
+    const [showAll, setShowAll] = useState(false);
+
+    useEffect(() => {
+        if(showAll){
+            setDisplayBooks(books)
+        }
+        else{
+            setDisplayBooks(books.slice(0, 6))
+        }
+    }, [books, showAll])
+
+
     return (
-        <div>
+        <div className='w-[90%] lg:w-[80%] mx-auto pb-10'>
             <div className='bg-gray-200 text-center py-10 my-5 rounded-2xl'>
                 <h1 className='text-3xl font-semibold flex items-center gap-4 justify-center'> <LibraryBig size={30} /> All Books</h1>
-                <p className='px-40 mt-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore rerum ipsum sapiente similique sed accusantium soluta error et, mollitia illo corporis officia alias perferendis, odit ab suscipit illum at eius.</p>
+                <hr className='w-60 mx-auto mt-4 border-white border-2'></hr>
+                <p className='px-40 mt-5'>Books are silent companions that whisper wisdom through every page.  
+                They open doors to worlds unseen and minds yet unexplored.  
+                In their quiet ink lies the power to change hearts and shape futures.  
+                Each chapter is a journey, every word a step toward understanding.</p>
             </div>
 
            <div className='flex gap-5' >
                 <div className='basis-[1000px]'>
-                    <div className='border p-2 rounded-2xl border-gray-300'>
+                    <div className='border p-2 rounded-2xl border-gray-300 sticky top-3'>
                         <h1 className='text-center text-xl font-semibold'>Books Category</h1>
                         <hr className='border-gray-300 mt-3'></hr>
                         <div className=' py-3 flex flex-col gap-2'>
@@ -58,9 +75,20 @@ const Books = () => {
 
                 <div className='border border-gray-300 grid gap-5 grid-cols-3 p-5 rounded-2xl'>
                     {
-                        books.map(book => <Book key={book.id} book={book}></Book>)
+                        displayBooks.map(book => <Book key={book.id} book={book}></Book>)
                     }
                 </div>
+
+                
+           </div>
+           <div className='flex justify-center'>
+                <button onClick={() => {
+                        setShowAll(prv => !prv);
+                        if(showAll) window.scrollTo({
+                            behavior: 'smooth',
+                            top: 0
+                        })
+                }} className='btn mt-10 bg-[#5894fc] text-white'>{showAll ? 'Show Less' : 'Show All'}</button>
            </div>
         </div>
     );

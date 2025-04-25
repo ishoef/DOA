@@ -22,18 +22,25 @@ const Book = ({book}) => {
                 <p> <span className='font-semibold'>Total Reviews :</span> {reviews}</p>
                 <p className='flex items-center gap-1'>
                     <p className='text-[17px]'>{Rating} </p>
+                    {/* <Star size={16} />
                     <Star size={16} />
                     <Star size={16} />
                     <Star size={16} />
-                    <Star size={16} />
-                    <Star size={16} />
+                    <Star size={16} /> */}
+                    <div className="rating rating-xs">
+                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="2 star" defaultChecked />
+                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+</div>
                 </p>
             </div>
             <div className='flex items-center justify-between'>
                 <p>Price : <strong> ${Price}</strong></p>
                 <p className='text-green-500'>{Availability}</p>
             </div>
-            <button className='btn hover:bg-[#153151] hover:text-white'>Buy Now</button>
+            <button className='btn hover:bg-[#153151] bg-[#5894fc] text-white'>Buy Now</button>
         </div>
     );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+    <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 mt-32">
         <div className="flex justify-between w-[80%] mx-auto">
             <aside>
                 <img className="w-50" src="https://i.ibb.co/0pbD70D4/Vertical-Logo.png" alt="" />
