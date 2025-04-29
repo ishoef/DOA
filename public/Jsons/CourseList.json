@@ -1,143 +1,162 @@
 [
-    {
-      "CourseName": "Qur'an Recitation (Tajweed)",
-      "Instructor": "Shaykh Yusuf Hasan",
-      "Enrolled": 2300,
-      "Price": "Free",
-      "CoursePhoto": "https://example.com/images/quran-recitation.jpg"
-    },
-    {
-      "CourseName": "Arabic Grammar for Beginners",
-      "Instructor": "Ustadh Ameen Ali",
-      "Enrolled": 1800,
-      "Price": "$20",
-      "CoursePhoto": "https://example.com/images/arabic-grammar.jpg"
-    },
-    {
-      "CourseName": "Seerah of the Prophet ﷺ",
-      "Instructor": "Dr. Fatimah Rahman",
-      "Enrolled": 1450,
-      "Price": "$15",
-      "CoursePhoto": "https://example.com/images/seerah.jpg"
-    },
-    {
-      "CourseName": "Introduction to Fiqh",
-      "Instructor": "Mufti Bilal Ahmad",
-      "Enrolled": 900,
-      "Price": "$25",
-      "CoursePhoto": "https://example.com/images/fiqh.jpg"
-    },
-    {
-      "CourseName": "Hadith Studies (Beginner)",
-      "Instructor": "Shaykh Omar Farooq",
-      "Enrolled": 1100,
-      "Price": "Free",
-      "CoursePhoto": "https://example.com/images/hadith.jpg"
-    },
-    {
-      "CourseName": "Aqidah: Foundations of Belief",
-      "Instructor": "Ustadha Leila Khan",
-      "Enrolled": 980,
-      "Price": "$10",
-      "CoursePhoto": "https://example.com/images/aqidah.jpg"
-    },
-    {
-      "CourseName": "Islamic Manners and Etiquette",
-      "Instructor": "Ustadh Kareem Alwan",
-      "Enrolled": 760,
-      "Price": "Free",
-      "CoursePhoto": "https://example.com/images/manners.jpg"
-    },
-    {
-      "CourseName": "Tafsir of Juz Amma",
-      "Instructor": "Shaykh Ahmad Jibril",
-      "Enrolled": 2100,
-      "Price": "$30",
-      "CoursePhoto": "https://example.com/images/tafsir.jpg"
-    },
-    {
-      "CourseName": "Arabic Conversation (Level 1)",
-      "Instructor": "Ustadh Sami Noor",
-      "Enrolled": 1300,
-      "Price": "$18",
-      "CoursePhoto": "https://example.com/images/arabic-convo.jpg"
-    },
-    {
-      "CourseName": "Islamic History 101",
-      "Instructor": "Dr. Huda Qasim",
-      "Enrolled": 800,
-      "Price": "Free",
-      "CoursePhoto": "https://example.com/images/history.jpg"
-    },
-    {
-      "CourseName": "Women in Islam",
-      "Instructor": "Ustadha Yasmin Hasan",
-      "Enrolled": 950,
-      "Price": "$12",
-      "CoursePhoto": "https://example.com/images/women-in-islam.jpg"
-    },
-    {
-      "CourseName": "Memorize Short Surahs",
-      "Instructor": "Shaykh Mahmoud Idris",
-      "Enrolled": 3000,
-      "Price": "Free",
-      "CoursePhoto": "https://example.com/images/memorization.jpg"
-    },
-    {
-      "CourseName": "Daily Duas and Supplications",
-      "Instructor": "Ustadh Tariq Hameed",
-      "Enrolled": 1900,
-      "Price": "$8",
-      "CoursePhoto": "https://example.com/images/duas.jpg"
-    },
-    {
-      "CourseName": "Intro to Islamic Finance",
-      "Instructor": "Dr. Omar Khalid",
-      "Enrolled": 500,
-      "Price": "$20",
-      "CoursePhoto": "https://example.com/images/finance.jpg"
-    },
-    {
-      "CourseName": "Learning Salah Step-by-Step",
-      "Instructor": "Shaykh Ali Mansoor",
-      "Enrolled": 2200,
-      "Price": "Free",
-      "CoursePhoto": "https://example.com/images/salah.jpg"
-    },
-    {
-      "CourseName": "Advanced Nahw (Syntax)",
-      "Instructor": "Ustadh Hasan Zafar",
-      "Enrolled": 400,
-      "Price": "$35",
-      "CoursePhoto": "https://example.com/images/nahw.jpg"
-    },
-    {
-      "CourseName": "Sarf (Morphology) Masterclass",
-      "Instructor": "Shaykh Tariq Amin",
-      "Enrolled": 370,
-      "Price": "$40",
-      "CoursePhoto": "https://example.com/images/sarf.jpg"
-    },
-    {
-      "CourseName": "Fiqh of Worship (Taharah to Salah)",
-      "Instructor": "Mufti Nadir Syed",
-      "Enrolled": 1200,
-      "Price": "$25",
-      "CoursePhoto": "https://example.com/images/worship.jpg"
-    },
-    {
-      "CourseName": "Intro to Usul al-Fiqh",
-      "Instructor": "Dr. Sara Hakeem",
-      "Enrolled": 600,
-      "Price": "$22",
-      "CoursePhoto": "https://example.com/images/usul.jpg"
-    },
-    {
-      "CourseName": "Spiritual Purification (Tazkiyah)",
-      "Instructor": "Shaykh Zayd Shakir",
-      "Enrolled": 1500,
-      "Price": "$15",
-      "CoursePhoto": "https://example.com/images/tazkiyah.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "CourseName": "Qur'an Recitation (Tajweed)",
+    "Instructor": "Shaykh Yusuf Hasan",
+    "Enrolled": 2300,
+    "Price": "Free",
+    "CoursePhoto": "https://example.com/images/quran-recitation.jpg"
+  },
+  {
+    "id": 2,
+    "CourseName": "Arabic Grammar for Beginners",
+    "Instructor": "Ustadh Ameen Ali",
+    "Enrolled": 1800,
+    "Price": "$20",
+    "CoursePhoto": "https://example.com/images/arabic-grammar.jpg"
+  },
+  {
+    "id": 3,
+    "CourseName": "Seerah of the Prophet ﷺ",
+    "Instructor": "Dr. Fatimah Rahman",
+    "Enrolled": 1450,
+    "Price": "$15",
+    "CoursePhoto": "https://example.com/images/seerah.jpg"
+  },
+  {
+    "id": 4,
+    "CourseName": "Introduction to Fiqh",
+    "Instructor": "Mufti Bilal Ahmad",
+    "Enrolled": 900,
+    "Price": "$25",
+    "CoursePhoto": "https://example.com/images/fiqh.jpg"
+  },
+  {
+    "id": 5,
+    "CourseName": "Hadith Studies (Beginner)",
+    "Instructor": "Shaykh Omar Farooq",
+    "Enrolled": 1100,
+    "Price": "Free",
+    "CoursePhoto": "https://example.com/images/hadith.jpg"
+  },
+  {
+    "id": 6,
+    "CourseName": "Aqidah: Foundations of Belief",
+    "Instructor": "Ustadha Leila Khan",
+    "Enrolled": 980,
+    "Price": "$10",
+    "CoursePhoto": "https://example.com/images/aqidah.jpg"
+  },
+  {
+    "id": 7,
+    "CourseName": "Islamic Manners and Etiquette",
+    "Instructor": "Ustadh Kareem Alwan",
+    "Enrolled": 760,
+    "Price": "Free",
+    "CoursePhoto": "https://example.com/images/manners.jpg"
+  },
+  {
+    "id": 8,
+    "CourseName": "Tafsir of Juz Amma",
+    "Instructor": "Shaykh Ahmad Jibril",
+    "Enrolled": 2100,
+    "Price": "$30",
+    "CoursePhoto": "https://example.com/images/tafsir.jpg"
+  },
+  {
+    "id": 9,
+    "CourseName": "Arabic Conversation (Level 1)",
+    "Instructor": "Ustadh Sami Noor",
+    "Enrolled": 1300,
+    "Price": "$18",
+    "CoursePhoto": "https://example.com/images/arabic-convo.jpg"
+  },
+  {
+    "id": 10,
+    "CourseName": "Islamic History 101",
+    "Instructor": "Dr. Huda Qasim",
+    "Enrolled": 800,
+    "Price": "Free",
+    "CoursePhoto": "https://example.com/images/history.jpg"
+  },
+  {
+    "id": 11,
+    "CourseName": "Women in Islam",
+    "Instructor": "Ustadha Yasmin Hasan",
+    "Enrolled": 950,
+    "Price": "$12",
+    "CoursePhoto": "https://example.com/images/women-in-islam.jpg"
+  },
+  {
+    "id": 12,
+    "CourseName": "Memorize Short Surahs",
+    "Instructor": "Shaykh Mahmoud Idris",
+    "Enrolled": 3000,
+    "Price": "Free",
+    "CoursePhoto": "https://example.com/images/memorization.jpg"
+  },
+  {
+    "id": 13,
+    "CourseName": "Daily Duas and Supplications",
+    "Instructor": "Ustadh Tariq Hameed",
+    "Enrolled": 1900,
+    "Price": "$8",
+    "CoursePhoto": "https://example.com/images/duas.jpg"
+  },
+  {
+    "id": 14,
+    "CourseName": "Intro to Islamic Finance",
+    "Instructor": "Dr. Omar Khalid",
+    "Enrolled": 500,
+    "Price": "$20",
+    "CoursePhoto": "https://example.com/images/finance.jpg"
+  },
+  {
+    "id": 15,
+    "CourseName": "Learning Salah Step-by-Step",
+    "Instructor": "Shaykh Ali Mansoor",
+    "Enrolled": 2200,
+    "Price": "Free",
+    "CoursePhoto": "https://example.com/images/salah.jpg"
+  },
+  {
+    "id": 16,
+    "CourseName": "Advanced Nahw (Syntax)",
+    "Instructor": "Ustadh Hasan Zafar",
+    "Enrolled": 400,
+    "Price": "$35",
+    "CoursePhoto": "https://example.com/images/nahw.jpg"
+  },
+  {
+    "id": 17,
+    "CourseName": "Sarf (Morphology) Masterclass",
+    "Instructor": "Shaykh Tariq Amin",
+    "Enrolled": 370,
+    "Price": "$40",
+    "CoursePhoto": "https://example.com/images/sarf.jpg"
+  },
+  {
+    "id": 18,
+    "CourseName": "Fiqh of Worship (Taharah to Salah)",
+    "Instructor": "Mufti Nadir Syed",
+    "Enrolled": 1200,
+    "Price": "$25",
+    "CoursePhoto": "https://example.com/images/worship.jpg"
+  },
+  {
+    "id": 19,
+    "CourseName": "Intro to Usul al-Fiqh",
+    "Instructor": "Dr. Sara Hakeem",
+    "Enrolled": 600,
+    "Price": "$22",
+    "CoursePhoto": "https://example.com/images/usul.jpg"
+  },
+  {
+    "id": 20,
+    "CourseName": "Spiritual Purification (Tazkiyah)",
+    "Instructor": "Shaykh Zayd Shakir",
+    "Enrolled": 1500,
+    "Price": "$15",
+    "CoursePhoto": "https://example.com/images/tazkiyah.jpg"
+  }
+]

@@ -43,7 +43,7 @@ const PopularCourses = () => {
                 <div className="tab-content bg-base-100 border-base-300 p-6">
                     <div className='grid grid-cols-3 gap-8'>
                         {
-                            courseCards.map(cardData => <CoursesCard cardData={cardData}></CoursesCard>)
+                            courseCards.map(cardData => <CoursesCard key={cardData.id} cardData={cardData}></CoursesCard>)
                         }
                     </div>
                 </div>

@@ -17,7 +17,7 @@ const CoursesCard = ({cardData}) => {
             </div>
             <hr className='border-gray-300 border' />
             <div className='flex items-center justify-between'>
-                <p className='text-[18px] font-semibold'>Price : {Price}</p>
+                <p className='text-xl font-semibold'><span className={Price === 'Free' ? 'text-green-600' : 'text-black'}> {Price}</span></p>
                 <button className='hover:scale-102 transition-all btn text-white px-7 text-[16px] bg-[#153151] '>Enroll Now</button>
             </div>
         </div>
