@@ -8,7 +8,7 @@ import { Link } from 'react-router';
 const Hero = () => {
     return (
         <div className='bg-[#153151]'>
-            <div className=' text-white w-[80%] mx-auto flex justify-between items-center py-20'>
+            <div className=' text-white w-[80%] mx-auto flex justify-between items-center pt-20 pb-32'>
                 <div className='left flex flex-col gap-6 items-start'>
                     <div className='w-5 h-5 animate-ping rounded-full bg-white flex justify-center items-center '>
                         <div className='w-2 h-2 rounded-full bg-[#153151]'></div>

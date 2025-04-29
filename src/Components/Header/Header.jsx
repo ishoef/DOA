@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router';
 const Header = () => {
     return (
         <>
-            <header className='border-b border-b-gray-300'>
+            <header className='border-b z-40 bg-white border-b-gray-300'>
                 <div className='flex justify-between items-center w-[80%] mx-auto py-3'>
                     <div>
                         {/* <h1 className='text-3xl font-bold text-[#153151]'>Ad-Dirasah</h1> */}

@@ -5,7 +5,7 @@ const Book = ({book}) => {
 
     const {bookName, Writer, Rating, PublishDate, Price, Publisher, Availability, BookPhoto, reviews } = book;
     return (
-        <div className='p-5 border border-gray-200 rounded-2xl flex flex-col gap-4'>
+        <div className='hover:scale-102 transition-all cursor-pointer p-5 border border-gray-200 rounded-2xl flex flex-col gap-4'>
             <div>
                 <img src={BookPhoto} alt="" />
             </div>
@@ -22,18 +22,13 @@ const Book = ({book}) => {
                 <p> <span className='font-semibold'>Total Reviews :</span> {reviews}</p>
                 <p className='flex items-center gap-1'>
                     <p className='text-[17px]'>{Rating} </p>
-                    {/* <Star size={16} />
-                    <Star size={16} />
-                    <Star size={16} />
-                    <Star size={16} />
-                    <Star size={16} /> */}
                     <div className="rating rating-xs">
-                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
-                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="2 star" defaultChecked />
-                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
-                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
-                    <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
-</div>
+                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="2 star" defaultChecked />
+                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                        <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                    </div>
                 </p>
             </div>
             <div className='flex items-center justify-between'>

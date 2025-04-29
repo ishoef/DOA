@@ -5,13 +5,15 @@ import Footer from '../../Components/Footer/Footer';
 
 const Root = () => {
     return (
-        <div>
-            <Header></Header>
+        <>
+            <div className='sticky top-0 z-50'>
+                <Header></Header>
+            </div>
             <div className=''>
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
-        </div>
+        </>
     );
 };
 
