@@ -5,12 +5,9 @@ const Footer = () => {
     <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 mt-32">
         <div className="flex justify-between w-[80%] mx-auto">
             <aside>
-                <img className="w-50" src="https://i.ibb.co/0pbD70D4/Vertical-Logo.png" alt="" />
-                <p className="text-[16px]">
-                ACME Industries Ltd.
-                <br />
-                Providing reliable tech since 1992
-                </p>
+                <img className="w-80" src="https://i.ibb.co/0pbD70D4/Vertical-Logo.png" alt="" />
+                <p className="text-[16px] text-xl font-semibold mt-4">Ad-Dirasah Online Academy - DOA</p>
+                <p className="w-100 mt-4">Ad-Dirasah Online Academy is an Islamic educational platform offering structured Arabic and Islamic studies programs for non-Arabic speakers.</p>
             </aside>
             <nav className="flex flex-col text-[16px] gap-2">
                 <h6 className="footer-title">Services</h6>

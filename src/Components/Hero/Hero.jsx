@@ -19,7 +19,7 @@ const Hero = () => {
                     </div>
                     <h1 className='leading-13 text-5xl font-bold tracking-wider'>Start Learning From <br></br> The World's <span className='text-amber-300'>Best Institutions</span></h1>
                     <div className='flex gap-10'>
-                        <button className='btn'>Get Started</button>
+                        <Link to='/courses'><button className='btn font-semibold text-[16px]'>Let's Start Learning</button></Link>
                         <div className='flex items-center gap-3'>
                             <Link to='https://youtu.be/1A1jPupL5Co' target='_black'><button className='cursor-pointer p-3 rounded-full bg-white'><FaPlay color='#153151' /></button></Link>
                             <Link to='https://youtu.be/1A1jPupL5Co' target='_black'><p className='text-xl'>Watch The Video</p></Link>
