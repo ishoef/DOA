@@ -1,11 +1,18 @@
 import React from "react";
 
 const Footer = () => {
+
+    const click = () => {
+        scrollTo({
+            behavior: 'smooth',
+            top: 0
+        })
+    }
   return (
     <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 mt-32">
         <div className="flex justify-between w-[80%] mx-auto">
             <aside>
-                <img className="w-80" src="https://i.ibb.co/0pbD70D4/Vertical-Logo.png" alt="" />
+                <img onClick={() => click()} className="w-80" src="https://i.ibb.co/0pbD70D4/Vertical-Logo.png" alt="" />
                 <p className="text-[16px] text-xl font-semibold mt-4">Ad-Dirasah Online Academy - DOA</p>
                 <p className="w-100 mt-4">Ad-Dirasah Online Academy is an Islamic educational platform offering structured Arabic and Islamic studies programs for non-Arabic speakers.</p>
             </aside>
