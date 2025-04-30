@@ -55,7 +55,7 @@ const Books = () => {
             </div>
 
            <div className='flex gap-5' >
-                <div className='basis-[1000px]'>
+                <div className='basis-3xl'>
                     <div className='border p-2 rounded-2xl border-gray-300 z-0 sticky top-25'>
                         <h1 className='text-center text-xl font-semibold'>Books Category</h1>
                         <hr className='border-gray-300 mt-3'></hr>
