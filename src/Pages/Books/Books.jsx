@@ -45,6 +45,7 @@ const Books = () => {
 
     return (
         <div className='w-[90%] lg:w-[80%] mx-auto pb-10'>
+            
             <div className='bg-gray-200 text-center py-10 my-5 rounded-2xl'>
                 <h1 className='text-3xl font-semibold flex items-center gap-4 justify-center'> <LibraryBig size={30} /> All Books</h1>
                 <hr className='w-60 mx-auto mt-4 border-white border-2'></hr>
@@ -53,7 +54,9 @@ const Books = () => {
                 In their quiet ink lies the power to change hearts and shape futures.  
                 Each chapter is a journey, every word a step toward understanding.</p>
             </div>
-
+            <div className='mt-10'>
+                <h1 className='text-4xl mb-10 font-semibold border-l-8 border-l-[#153151] py-2 rounded pl-4'>Books Library</h1>
+            </div>
            <div className='flex gap-5' >
                 <div className='basis-3xl'>
                     <div className='border p-2 rounded-2xl border-gray-300 z-0 sticky top-25'>

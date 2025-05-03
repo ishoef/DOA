@@ -32,10 +32,10 @@ const Book = ({book}) => {
                 </p>
             </div>
             <div className='flex items-center justify-between'>
-                <p>Price : <strong> ${Price}</strong></p>
-                <p className='text-green-500'>{Availability}</p>
+                <p>Price : $<strong> {Price}</strong></p>
+                <p className={Availability === 'Out of Stock' ? 'text-red-600' : 'text-green-500'}>{Availability}</p>
             </div>
-            <button className='btn hover:bg-[#153151] bg-[#5894fc] text-white'>Buy Now</button>
+            <button className=' btn hover:bg-[#153151] bg-[#5894fc] text-white'>Buy Now</button>
         </div>
     );
 };
