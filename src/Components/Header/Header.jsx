@@ -178,6 +178,19 @@ const Header = () => {
                 <li>
                   {" "}
                   <NavLink
+                    to="/courses"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                        : "hover:bg-gray-200 py-2 px-3 rounded"
+                    }
+                  >
+                    Courses
+                  </NavLink>{" "}
+                </li>
+                <li>
+                  {" "}
+                  <NavLink
                     to="/contact"
                     className={({ isActive }) =>
                       isActive
@@ -194,7 +207,7 @@ const Header = () => {
                     to={user ? "/myprofile" : "/auth/login"}
                     className={({ isActive }) =>
                       isActive
-                        ? "bg-primary text-white px-4 pb-2 pt-1 rounded"
+                        ? "bg-[#153151] text-white px-4 pb-2 pt-1 rounded"
                         : "bg-none px-4 pb-2 pt-1 rounded"
                     }
                   >

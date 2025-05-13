@@ -126,7 +126,7 @@ const Login = () => {
       <div className="w-[100%] lg:h-[100vh] flex justify-center items-center pt-5 lg:pt-0 bg-gray-200">
         <div className="flex flex-col justify-center items-center gap-5 lg:gap-10 p-3 lg:p-5 w-120">
           <h1 className="text-xl lg:text-3xl font-semibold">
-            <span className="text-primary font-bold underline">Log in</span>{" "}
+            <span className="text-[#153151] font-bold underline">Log in</span>{" "}
             Your Account
           </h1>
           <div className="w-full bg-white border border-gray-300 rounded-2xl p-6 lg:p-10">
@@ -137,7 +137,7 @@ const Login = () => {
                   Email
                 </label>
                 <input
-                  className="focus:outline-primary border border-gray-400 rounded py-2 px-3"
+                  className="focus:outline-[#153151] border border-gray-400 rounded py-2 px-3"
                   placeholder="Enter Your Email"
                   type="email"
                   name="email"
@@ -152,7 +152,7 @@ const Login = () => {
                   Password
                 </label>
                 <input
-                  className="focus:outline-primary border border-gray-400 rounded py-2 px-3"
+                  className="focus:outline-[#153151] border border-gray-400 rounded py-2 px-3"
                   placeholder="Enter Your password"
                   type="password"
                   name="password"
@@ -182,7 +182,7 @@ const Login = () => {
                   </Link>
                 </p>
               </div>
-              <button className="btn bg-primary  text-white">Login</button>
+              <button className="btn bg-[#153151]  text-white">Login</button>
             </form>
 
             <div className="divider">Or Continue with</div>
