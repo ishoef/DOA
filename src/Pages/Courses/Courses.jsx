@@ -1,10 +1,13 @@
 import { LibraryBig } from 'lucide-react';
-import React from 'react';
+import React, { useEffect } from 'react';
 import PopularCourses from '../../Components/PopularCourses/PopularCourses';
 import { SiGoogleclassroom } from "react-icons/si";
 
 
 const Courses = () => {
+    useEffect (() => {
+            document.title = "Courses | DOA";
+          }, []);
     return (
         <div className='w-[80%] mx-auto'>
             <div className='bg-gray-200 text-center py-10 my-5 rounded-2xl'>

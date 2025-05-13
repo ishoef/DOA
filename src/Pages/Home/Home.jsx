@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../../Components/Hero/Hero';
 import Stat from '../../Components/Stat/Stat';
 import PopularCourses from '../../Components/PopularCourses/PopularCourses';
 
 const Home = () => {
+    useEffect (() => {
+        document.title = "Home | DOA";
+      }, []);
     return (
         <div>
             <Hero></Hero>
