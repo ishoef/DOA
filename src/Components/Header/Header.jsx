@@ -2,11 +2,11 @@ import React, { use, useState } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import { TiThMenu } from "react-icons/ti";
 
 const Header = () => {
   const { user, logOut } = use(AuthContext);
-  
-  
+
   // Logout Handler
   const handleLogOut = () => {
     logOut()
@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       <header className="relative border-b z-40 bg-white border-b-gray-300">
-        <div className="flex justify-between items-center w-[80%] mx-auto py-3">
+        <div className="flex justify-between items-center w-11/12 lg:w-[80%] mx-auto py-3">
           {/* Logo */}
           <div>
             <Link to="/">
@@ -43,63 +43,65 @@ const Header = () => {
           </div>
 
           {/* Navbar */}
-          <nav className="flex gap-3 text-[17px] font-semibold">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
-                  : "hover:bg-gray-200 py-2 px-3 rounded"
-              }
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/courses"
-              className={({ isActive }) =>
-                isActive
-                  ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
-                  : "hover:bg-gray-200 py-2 px-3 rounded"
-              }
-            >
-              Courses
-            </NavLink>
-            <NavLink
-              to="/books"
-              className={({ isActive }) =>
-                isActive
-                  ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
-                  : "hover:bg-gray-200 py-2 px-3 rounded"
-              }
-            >
-              Books
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                isActive
-                  ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
-                  : "hover:bg-gray-200 py-2 px-3 rounded"
-              }
-            >
-              Contact Us
-            </NavLink>
+          <div className="hidden lg:block">
+            <nav className="flex gap-3 text-[17px] font-semibold">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                    : "hover:bg-gray-200 py-2 px-3 rounded"
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/courses"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                    : "hover:bg-gray-200 py-2 px-3 rounded"
+                }
+              >
+                Courses
+              </NavLink>
+              <NavLink
+                to="/books"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                    : "hover:bg-gray-200 py-2 px-3 rounded"
+                }
+              >
+                Books
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                    : "hover:bg-gray-200 py-2 px-3 rounded"
+                }
+              >
+                Contact Us
+              </NavLink>
 
-            {/* Private Profile Route */}
-            <NavLink
-              to={user ? "/myprofile" : "/auth/login"}
-              className={({ isActive }) =>
-                isActive
-                  ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
-                  : "hover:bg-gray-200 py-2 px-3 rounded"
-              }
-            >
-              My Profile
-            </NavLink>
-          </nav>
+              {/* Private Profile Route */}
+              <NavLink
+                to={user ? "/myprofile" : "/auth/login"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                    : "hover:bg-gray-200 py-2 px-3 rounded"
+                }
+              >
+                My Profile
+              </NavLink>
+            </nav>
+          </div>
 
           {/* Prifle Showing Icon */}
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
             {user ? (
               <Link to="/myprofile">
                 <div
@@ -137,6 +139,80 @@ const Header = () => {
                 </button>
               </Link>
             )}
+
+            {/* Small Device Dropdown Menu */}
+            <div className="dropdown dropdown-end lg:hidden">
+              <div tabIndex={0} role="button" className="btn m-1">
+                <TiThMenu />
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+              >
+                <li>
+                  {" "}
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                        : "hover:bg-gray-200 py-2 px-3 rounded"
+                    }
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  {" "}
+                  <NavLink
+                    to="/books"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                        : "hover:bg-gray-200 py-2 px-3 rounded"
+                    }
+                  >
+                    Books
+                  </NavLink>{" "}
+                </li>
+                <li>
+                  {" "}
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "border-b-2 border-b-2-[#153151] bg-gray-200 py-2 px-3 rounded"
+                        : "hover:bg-gray-200 py-2 px-3 rounded"
+                    }
+                  >
+                    Contact Us
+                  </NavLink>{" "}
+                </li>
+                <li>
+                  {" "}
+                  <NavLink
+                    to={user ? "/myprofile" : "/auth/login"}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-primary text-white px-4 pb-2 pt-1 rounded"
+                        : "bg-none px-4 pb-2 pt-1 rounded"
+                    }
+                  >
+                    My Profile
+                  </NavLink>{" "}
+                </li>
+                <li>
+                  {user && (
+                    <button
+                      onClick={handleLogOut}
+                      className=" btn bg-[#153151] text-white mt-2"
+                    >
+                      Log Out
+                    </button>
+                  )}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

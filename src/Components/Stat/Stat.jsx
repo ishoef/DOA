@@ -22,7 +22,7 @@ const Stat = () => {
     }, [])
  
     return (
-        <div className="grid grid-cols-4 w-[80%] mx-auto gap-5 my-5 absolute top-178 left-0 right-0">
+        <div className="grid grid-cols-2 lg:grid-cols-4 w-11/12 lg:w-[80%] mx-auto gap-5 my-5 absolute top-110 lg:top-178 left-0 right-0">
             {
                 statistics.map(statistic => <SingleState key={statistic.id} statistic={statistic} ></SingleState>)
             }

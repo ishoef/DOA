@@ -49,14 +49,14 @@ const PopularCourses = () => {
     ]
 
     return (
-      <div className="mt-20">
+      <div className="mt-70 md:mt-75 lg:mt-20">
         <div>
           <h1 className="text-4xl mb-10 font-semibold border-l-8 border-l-[#153151] py-2 rounded pl-4">
             Popular Courses
           </h1>
         </div>
         <div className="flex gap-5">
-          <div className="basis-6xl">
+          <div className="hidden lg:block basis-6xl">
             <div className="border p-2 rounded-2xl border-gray-300 z-0 sticky top-25">
               <h1 className=" text-[#153151] text-center text-xl font-semibold">
                 Course Category
@@ -89,8 +89,11 @@ const PopularCourses = () => {
                 aria-label="Paid Courses"
                 defaultChecked
               />
-              <div className="tab-content bg-base-100 border-base-300 p-6">
-                <div className="grid grid-cols-3 gap-8">
+              <div
+                className="tab-content bg-base-100 border-base-300 p-3
+               lg:p-6"
+              >
+                <div className="grid lg:grid-cols-3 gap-8">
                   {paidCourse.map((cardData) => (
                     <CoursesCard
                       key={cardData.id}
@@ -111,8 +114,8 @@ const PopularCourses = () => {
                 className="tab text-xl"
                 aria-label="Free Course"
               />
-              <div className="tab-content bg-base-100 border-base-300 p-6">
-                <div className="grid grid-cols-3 gap-8">
+              <div className="tab-content bg-base-100 border-base-300 p-3 lg:p-6">
+                <div className="grid lg:grid-cols-3 gap-8">
                   {freeCourses.map((cardData) => (
                     <CoursesCard
                       key={cardData.id}

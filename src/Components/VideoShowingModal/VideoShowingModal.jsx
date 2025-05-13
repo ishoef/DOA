@@ -33,7 +33,7 @@ const VideoShowingModal = () => {
           <FaPlay color="#153151" />
         </button>
 
-        <p className="text-xl">Watch The Video</p>
+        <p className="text-xl hidden md:block lg:block">Watch The Video</p>
       </div>
 
       {/* VideoShowing Modal */}
@@ -41,7 +41,7 @@ const VideoShowingModal = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#15315199] transition-opacity  ">
           <div
             ref={modalRef}
-            className="bg-white p-5 rounded shadow-lg w-[70%] max-w-fit relative"
+            className="bg-white p-2 lg:p-5 rounded shadow-lg lg:w-[70%] max-w-fit relative"
           >
             {/* Close button */}
             <button
@@ -50,7 +50,7 @@ const VideoShowingModal = () => {
             >
               ✖
             </button>
-            <div className="w-265 h-149">
+            <div className="w-80 h-46 md:w-180 md:h-101  lg:w-265 lg:h-149">
               <iframe
                 width="100%"
                 height="100%"

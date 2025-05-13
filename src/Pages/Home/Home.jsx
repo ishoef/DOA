@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <Hero></Hero>
             <Stat></Stat>
-            <div className='w-[80%] mx-auto mt-42'>
+            <div className='w-11/12 lg:w-[80%] mx-auto mt-42'>
                 <PopularCourses></PopularCourses>
             </div>
         </div>

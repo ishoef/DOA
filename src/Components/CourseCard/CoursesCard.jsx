@@ -11,7 +11,7 @@ const CoursesCard = ({cardData}) => {
                 
             </div>
             <div className=''>
-                <h1 className='text-[26px] font-semibold'>{CourseName}</h1>
+                <h1 className=' text-[20px] md:text-[24px] lg:text-[26px] font-semibold'>{CourseName}</h1>
                 <p className='text-[18px] mt-2'>Ustaz : <span className='font-semibold hover:text-blue-800'>{Instructor}</span></p>
                 <p className='mt-2'>Enrolled : {Enrolled}</p>
             </div>

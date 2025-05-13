@@ -44,14 +44,14 @@ const Books = () => {
   }, [books, showAll]);
 
   return (
-    <div className="w-[90%] lg:w-[80%] mx-auto pb-10">
+    <div className="w-11/12 lg:w-[80%] mx-auto lg:pb-10">
       <div className="bg-gray-200 text-center py-10 my-5 rounded-2xl">
         <h1 className="text-3xl font-semibold flex items-center gap-4 justify-center">
           {" "}
           <LibraryBig size={30} /> All Books
         </h1>
         <hr className="w-60 mx-auto mt-4 border-white border-2"></hr>
-        <p className="px-40 mt-5">
+        <p className="px-3 md:px-14 lg:px-40 mt-5 md:text-xl">
           Books are silent companions that whisper wisdom through every page.
           They open doors to worlds unseen and minds yet unexplored. In their
           quiet ink lies the power to change hearts and shape futures. Each
@@ -59,12 +59,12 @@ const Books = () => {
         </p>
       </div>
       <div className="mt-10">
-        <h1 className="text-4xl mb-10 font-semibold border-l-8 border-l-[#153151] py-2 rounded pl-4">
+        <h1 className="text-2xl lg:text-4xl mb-10 font-semibold border-l-8 border-l-[#153151] py-1 lg:py-2 rounded pl-4">
           Books Library
         </h1>
       </div>
       <div className="flex gap-5">
-        <div className="basis-3xl">
+        <div className="basis-3xl hidden lg:block">
           <div className="border p-2 rounded-2xl border-gray-300 z-0 sticky top-25">
             <h1 className="text-center text-xl font-semibold">
               Books Category
@@ -89,7 +89,7 @@ const Books = () => {
           </div>
         </div>
 
-        <div className="border border-gray-300 grid gap-5 grid-cols-3 p-5 rounded-2xl">
+        <div className="border border-gray-300 grid gap-4 lg:gap-5 md:grid-cols-2 lg:grid-cols-3 p-3 md:p-4 lg:p-5 rounded-2xl">
           {displayBooks.map((book) => (
             <Book key={book.id} book={book}></Book>
           ))}
