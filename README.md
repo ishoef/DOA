@@ -1,12 +1,46 @@
-# React + Vite
+# 📚 Ad-Dirasah Online Academy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Ad-Dirasah Online Academy** is a web-based learning platform dedicated to providing high-quality, structured education in Arabic grammar, Islamic studies, and foundational subjects. The platform is tailored for students seeking clarity, consistency, and depth in their learning journey.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Features
 
-## Expanding the ESLint configuration
+- ✅ Arabic grammar lessons with sentence analysis (Tarkīb)
+- ✅ Structured course materials and lesson flow
+- ✅ Clean, responsive, and user-friendly interface
+- ✅ Student-focused design with simplicity in mind
+- ✅ Secure user authentication with Firebase
+- ✅ Built using modern web technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS, React Router
+- **Backend:** Node.js, Express.js, MongoDB
+- **Auth & Hosting:** Firebase
+- **Other Tools:** Git, VS Code, Vercel
+
+---
+
+## 🚀 Project Goal
+
+To make traditional Islamic knowledge more accessible through modern web technology—especially for students who prefer structured, digital learning.
+
+---
+
+## 🌐 Live Preview
+
+[🔗 Visit Ad-Dirasah Online Academy](https://ad-dirasah.web.app)
+
+---
+
+## 📩 Contact
+
+For feedback, questions, or collaboration:  
+**📧 ismailhossennayeb@gmail.com**
+
+---
+
+> "Knowledge is light, and it deserves a platform that reflects its clarity."
