@@ -9,20 +9,32 @@ const Header = () => {
 
   // Logout Handler
   const handleLogOut = () => {
-    logOut()
-      .then(() => {
-        // Sign-out successful.
-        //  alert("you are loged out successfully");
-        Swal.fire({
-          title: "You Are Loged Out!",
-          icon: "success",
-          draggable: true,
-        });
-      })
-      .catch((error) => {
-        // An error happened.
-        alert(error);
-      });
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You want to log out?",
+      icon: "warning",
+      confirmButtonText: "Yes, log out!",
+      confirmButtonColor: "#153151",
+      showCancelButton: true,
+      cancelButtonText: "No, cancel!",
+      cancelButtonColor: "red",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        logOut()
+          .then(() => {
+            // Sign-out successful.
+            //  alert("you are loged out successfully");
+            Swal.fire({
+              title: "You Are Loged Out!",
+              icon: "success",
+              draggable: true,
+            });
+          })
+          .catch((error) => {
+            Swal.fire("Error!", error.message, "error");
+          });
+      }
+    });
   };
 
   const [showTooltip, setShowTooltip] = useState(false);
