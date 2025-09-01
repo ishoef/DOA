@@ -23,49 +23,53 @@ const VideoShowingModal = () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, [showVideo]);
+
   return (
     <>
+      {/* Trigger Button */}
       <div
         onClick={() => setShowVideo(true)}
         className="flex items-center gap-3 cursor-pointer"
       >
-        <button className="cursor-pointer p-3 rounded-full bg-white">
+        {/* 🔹 Added shadow-md for better button look */}
+        <button className="cursor-pointer p-3 rounded-full bg-white shadow-md">
           <FaPlay color="#153151" />
         </button>
-
         <p className="text-xl hidden md:block lg:block">Watch The Video</p>
       </div>
 
-      {/* VideoShowing Modal */}
+      {/* Video Modal */}
       {showVideo && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#15315199] transition-opacity  ">
+        // 🔹 Added px-4 for mobile padding
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#15315199] px-4">
           <div
             ref={modalRef}
-            className="bg-white p-2 lg:p-5 rounded shadow-lg lg:w-[70%] max-w-fit relative"
+            // 🔹 Changed size classes → w-full max-w-4xl for responsive modal width
+            className="bg-white p-2 md:p-5 rounded-xl shadow-lg w-full max-w-4xl relative"
           >
             {/* Close button */}
             <button
-              className="cursor-pointer absolute top-2 right-2 text-gray-600 hover:text-black"
+              className="cursor-pointer absolute top-2 right-2 text-gray-600 hover:text-black text-xl"
               onClick={() => setShowVideo(false)}
             >
               ✖
             </button>
-            <div className="w-80 h-46 md:w-180 md:h-101  lg:w-265 lg:h-149">
+
+            {/* 🔹 NEW: Responsive video wrapper using aspect ratio */}
+            <div className="relative w-full pt-[56.25%]">
+              {/* 16:9 aspect ratio trick */}
               <iframe
-                width="100%"
-                height="100%"
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
                 src="https://www.youtube.com/embed/1A1jPupL5Co?si=bhh5egMl_PblS8Eg"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </div>
           </div>
         </div>
       )}
-
-      {/* <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1083729082?h=a8dabf0749&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="YouTube Short Video from Orientation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> */}
     </>
   );
 };
